@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1acfea5ec3c294fdbab3c4d0f5511456 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1acfea5ec3c294fdbab3c4d0f5511456" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1acfea5ec3c294fdbab3c4d0f5511456 = L.map(
+                "map_1acfea5ec3c294fdbab3c4d0f5511456",
+                {
+                    center: [-22.900252, -43.178084],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_92e596e8b276b3655c60c16d59a12c73 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_92e596e8b276b3655c60c16d59a12c73.addTo(map_1acfea5ec3c294fdbab3c4d0f5511456);
+        
+    
+            var feature_group_7249f994115f7023c7d18192fa4c06bf = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_ef1a07d28ab881dc47f651a9aea03813 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_efbb0d5f1a51988a73d25796a8177584 = L.marker(
+                [-22.9029765, -43.1838656],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_288126ffdee785fe741d1607229526c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17d5401203f15d7b4c65eaa4029b23fd = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_5315fa127d06db9c0c029bb0c08b57fe = $(`<div id="html_5315fa127d06db9c0c029bb0c08b57fe" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 28832973-5<br> <b>Endereço:</b> Avenida Passos, 91 <br> <b>Rua:</b> Avenida Passos<br> <b>Ponto de referência:</b> esquina com Avenida Presidente Vargas<br> <b>Tipo de ocorrência:</b> Reposição de grelha/tampão<br>          <br>         <b>Foto:</b><br>          <img             src="images/28832973-5.jpeg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_17d5401203f15d7b4c65eaa4029b23fd.setContent(html_5315fa127d06db9c0c029bb0c08b57fe);
+            
+        
+
+        marker_efbb0d5f1a51988a73d25796a8177584.bindPopup(popup_17d5401203f15d7b4c65eaa4029b23fd)
+        ;
+
+        
+    
+    
+                marker_efbb0d5f1a51988a73d25796a8177584.setIcon(icon_288126ffdee785fe741d1607229526c3);
+            
+    
+            var marker_d5cd981099f767980a09a3646792020c = L.marker(
+                [-22.9040152, -43.1818432],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_4cc9cee3b7f734601284561d973a5929 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_064a8cc96f88b24705820b41ea2dea4a = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_17dbca8fccd79a3a707725324f5a8521 = $(`<div id="html_17dbca8fccd79a3a707725324f5a8521" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 31273593-0<br> <b>Endereço:</b> Rua Buenos Aires, 79<br> <b>Rua:</b> Rua Buenos Aires<br> <b>Ponto de referência:</b> 78<br> <b>Tipo de ocorrência:</b> Reposição de grelha/tampão<br>          <br>         <b>Foto:</b><br>          <img             src="images/31273593-0.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_064a8cc96f88b24705820b41ea2dea4a.setContent(html_17dbca8fccd79a3a707725324f5a8521);
+            
+        
+
+        marker_d5cd981099f767980a09a3646792020c.bindPopup(popup_064a8cc96f88b24705820b41ea2dea4a)
+        ;
+
+        
+    
+    
+                marker_d5cd981099f767980a09a3646792020c.setIcon(icon_4cc9cee3b7f734601284561d973a5929);
+            
+    
+            var marker_5b68ab7091565b195cd651af73ec94bc = L.marker(
+                [-22.9022024, -43.1774392],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_bc5abbc2f266c293bcc87a6f7214acd5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d547853a581c9103b9b7f048a07580e5 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_0626bea91b165c6054625f72859ef9ce = $(`<div id="html_0626bea91b165c6054625f72859ef9ce" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 31437152-5<br> <b>Endereço:</b> Rua Buenos Aires, 77<br> <b>Rua:</b> Rua Buenos Aires<br> <b>Ponto de referência:</b> Até a esquina com Rua Miguel Couto<br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br>          <br>         <b>Foto:</b><br>          <img             src="images/31437152-5.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_d547853a581c9103b9b7f048a07580e5.setContent(html_0626bea91b165c6054625f72859ef9ce);
+            
+        
+
+        marker_5b68ab7091565b195cd651af73ec94bc.bindPopup(popup_d547853a581c9103b9b7f048a07580e5)
+        ;
+
+        
+    
+    
+                marker_5b68ab7091565b195cd651af73ec94bc.setIcon(icon_bc5abbc2f266c293bcc87a6f7214acd5);
+            
+    
+            var marker_3c139f0cc67418cddd3b3c5e53d998aa = L.marker(
+                [-22.9018962, -43.1842151],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_cd5f7d2ed20880ad80bc0149100c673a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d259ecb9b30bfcc31144ca051563b4e = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_b09a44396e11dfa68fc0c0f8de31ba05 = $(`<div id="html_b09a44396e11dfa68fc0c0f8de31ba05" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 31602057-6<br> <b>Endereço:</b> Avenida Marechal Floriano, 99<br> <b>Rua:</b> Avenida Marechal Floriano<br> <b>Ponto de referência:</b>  Altura da faixa de pedestres<br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br>          <br>         <b>Foto:</b><br>          <img             src="images/31602057-6.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_9d259ecb9b30bfcc31144ca051563b4e.setContent(html_b09a44396e11dfa68fc0c0f8de31ba05);
+            
+        
+
+        marker_3c139f0cc67418cddd3b3c5e53d998aa.bindPopup(popup_9d259ecb9b30bfcc31144ca051563b4e)
+        ;
+
+        
+    
+    
+                marker_3c139f0cc67418cddd3b3c5e53d998aa.setIcon(icon_cd5f7d2ed20880ad80bc0149100c673a);
+            
+    
+            var marker_22d42d14e2d8bd6a6dd22869c236b247 = L.marker(
+                [-22.5089792, -43.1668329],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_5e093698f80de71605c6b420f54bfbfa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47d7da977ef9de826c661deb8b1e1c5a = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_e37e6785d112773103aab958dabf23be = $(`<div id="html_e37e6785d112773103aab958dabf23be" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 31608096-8<br> <b>Endereço:</b> Rua Buenos Aires, 108<br> <b>Rua:</b> Rua Buenos Aires<br> <b>Ponto de referência:</b>  Itaú <br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br>          <br>         <b>Foto:</b><br>          <img             src="images/31608096-8.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_47d7da977ef9de826c661deb8b1e1c5a.setContent(html_e37e6785d112773103aab958dabf23be);
+            
+        
+
+        marker_22d42d14e2d8bd6a6dd22869c236b247.bindPopup(popup_47d7da977ef9de826c661deb8b1e1c5a)
+        ;
+
+        
+    
+    
+                marker_22d42d14e2d8bd6a6dd22869c236b247.setIcon(icon_5e093698f80de71605c6b420f54bfbfa);
+            
+    
+            var marker_8e8e92b9bc28ed588b7fc8528b1fd72e = L.marker(
+                [-22.9029144, -43.1795515],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_1d9089b8799b807826ab94c15ee086a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_725380e1a1b914193b855d896de4f30e = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_0bee67fa9f6a973777456f7beab05054 = $(`<div id="html_0bee67fa9f6a973777456f7beab05054" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 32206600-7<br> <b>Endereço:</b> Rua Buenos Aires, 90 <br> <b>Rua:</b> Rua Buenos Aires<br> <b>Ponto de referência:</b> Amazônia Pesca <br> <b>Tipo de ocorrência:</b> Reposição de grelha/tampão<br>          <br>         <b>Foto:</b><br>          <img             src="images/32206600-7.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_725380e1a1b914193b855d896de4f30e.setContent(html_0bee67fa9f6a973777456f7beab05054);
+            
+        
+
+        marker_8e8e92b9bc28ed588b7fc8528b1fd72e.bindPopup(popup_725380e1a1b914193b855d896de4f30e)
+        ;
+
+        
+    
+    
+                marker_8e8e92b9bc28ed588b7fc8528b1fd72e.setIcon(icon_1d9089b8799b807826ab94c15ee086a4);
+            
+    
+            var marker_e36764e2928c523b8d0427827f98a06f = L.marker(
+                [-22.9, -43.18],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_ce58ddbcb16053db837497331346b233 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2796f29b176e143e833efedb70651447 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_866748379ef74a5e029f13ed6a7877b3 = $(`<div id="html_866748379ef74a5e029f13ed6a7877b3" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 32394777-6<br> <b>Endereço:</b> Rua Buenos Aires, 80A<br> <b>Rua:</b> nan<br> <b>Ponto de referência:</b> Entrada <br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br>          <br>         <b>Foto:</b><br>          <img             src="images/32394777-6.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_2796f29b176e143e833efedb70651447.setContent(html_866748379ef74a5e029f13ed6a7877b3);
+            
+        
+
+        marker_e36764e2928c523b8d0427827f98a06f.bindPopup(popup_2796f29b176e143e833efedb70651447)
+        ;
+
+        
+    
+    
+                marker_e36764e2928c523b8d0427827f98a06f.setIcon(icon_ce58ddbcb16053db837497331346b233);
+            
+    
+            var marker_052421dc8f230d552f48f290ebe00bf4 = L.marker(
+                [-22.9111518, -43.1855906],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_68668405ebaa4c228a3e33e4dd91d8b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e65b27897cf8416d30902295adaf0b99 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_19754752b77f7b7e4784d4bfc100ceaa = $(`<div id="html_19754752b77f7b7e4784d4bfc100ceaa" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 31689789-4<br> <b>Endereço:</b> Avenida Henrique Valadares, 17<br> <b>Rua:</b> Avenida Henrique Valadares<br> <b>Ponto de referência:</b> Fresh<br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br>          <br>         <b>Foto:</b><br>          <img             src="images/31689789-4.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_e65b27897cf8416d30902295adaf0b99.setContent(html_19754752b77f7b7e4784d4bfc100ceaa);
+            
+        
+
+        marker_052421dc8f230d552f48f290ebe00bf4.bindPopup(popup_e65b27897cf8416d30902295adaf0b99)
+        ;
+
+        
+    
+    
+                marker_052421dc8f230d552f48f290ebe00bf4.setIcon(icon_68668405ebaa4c228a3e33e4dd91d8b2);
+            
+    
+            var marker_42d59afd7b2131026e52cb5e3f7d6550 = L.marker(
+                [-22.9056478, -43.1801109],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_7f16f8d205b6b14395e72607150d7b2d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e4c5ab19570d102fd913958da600400c = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_3835310904cd716985717d1db9c05d76 = $(`<div id="html_3835310904cd716985717d1db9c05d76" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 31232023-4<br> <b>Endereço:</b> Rua Ramalho Ortigão, 34<br> <b>Rua:</b> Rua Ramalho Ortigão<br> <b>Ponto de referência:</b> Centro Empresarial Rio 34<br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br> </div></div>`)[0];
+                popup_e4c5ab19570d102fd913958da600400c.setContent(html_3835310904cd716985717d1db9c05d76);
+            
+        
+
+        marker_42d59afd7b2131026e52cb5e3f7d6550.bindPopup(popup_e4c5ab19570d102fd913958da600400c)
+        ;
+
+        
+    
+    
+                marker_42d59afd7b2131026e52cb5e3f7d6550.setIcon(icon_7f16f8d205b6b14395e72607150d7b2d);
+            
+    
+            var marker_4557a0b83f52f1a51029e78b9f68c53e = L.marker(
+                [-22.9043292, -43.1791983],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_0ca204ada21970404c457c02c8401229 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_575ac37f5942a2b65b1802cb5598b5d7 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_802cad8849a62c961106d70e6881efb6 = $(`<div id="html_802cad8849a62c961106d70e6881efb6" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 31874616-0<br> <b>Endereço:</b> Rua Gonçalves Dias, 70 <br> <b>Rua:</b> Rua Gonçalves Dias<br> <b>Ponto de referência:</b> Esquina com Rua do Ouvidor, 155<br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br>          <br>         <b>Foto:</b><br>          <img             src="images/31874616-0.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_575ac37f5942a2b65b1802cb5598b5d7.setContent(html_802cad8849a62c961106d70e6881efb6);
+            
+        
+
+        marker_4557a0b83f52f1a51029e78b9f68c53e.bindPopup(popup_575ac37f5942a2b65b1802cb5598b5d7)
+        ;
+
+        
+    
+    
+                marker_4557a0b83f52f1a51029e78b9f68c53e.setIcon(icon_0ca204ada21970404c457c02c8401229);
+            
+    
+            var marker_9da35e477ede2e0a6402eb30f60ddf05 = L.marker(
+                [-22.9039853, -43.1799486],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_664b26b609022d4d62e08178d987a4f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de84e7281e03355d6da8ddd188945a2c = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_0ac49b17c891902c524f50d3f4824088 = $(`<div id="html_0ac49b17c891902c524f50d3f4824088" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 31961727-5<br> <b>Endereço:</b> Rua do Rosário, 173<br> <b>Rua:</b> Rua do Rosário<br> <b>Ponto de referência:</b> Esquina com Rua Uruguaiana, Bob's<br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br>          <br>         <b>Foto:</b><br>          <img             src="images/31961727-5.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_de84e7281e03355d6da8ddd188945a2c.setContent(html_0ac49b17c891902c524f50d3f4824088);
+            
+        
+
+        marker_9da35e477ede2e0a6402eb30f60ddf05.bindPopup(popup_de84e7281e03355d6da8ddd188945a2c)
+        ;
+
+        
+    
+    
+                marker_9da35e477ede2e0a6402eb30f60ddf05.setIcon(icon_664b26b609022d4d62e08178d987a4f0);
+            
+    
+            var marker_4cf5f9a9fbb91129fd7428a33b9a031e = L.marker(
+                [-22.9009472, -43.1812865],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_d116d183d4642ad7ca9a70193c0b46d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dbd771ffb93bac8a754fb86c7bd18282 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_1557716961679b889dd272183d01e3ba = $(`<div id="html_1557716961679b889dd272183d01e3ba" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 31789147-0<br> <b>Endereço:</b> Rua Teófilo Otoni, 152<br> <b>Rua:</b> Rua Teófilo Otoni<br> <b>Ponto de referência:</b> Xerox<br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br>          <br>         <b>Foto:</b><br>          <img             src="images/31789147-0.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_dbd771ffb93bac8a754fb86c7bd18282.setContent(html_1557716961679b889dd272183d01e3ba);
+            
+        
+
+        marker_4cf5f9a9fbb91129fd7428a33b9a031e.bindPopup(popup_dbd771ffb93bac8a754fb86c7bd18282)
+        ;
+
+        
+    
+    
+                marker_4cf5f9a9fbb91129fd7428a33b9a031e.setIcon(icon_d116d183d4642ad7ca9a70193c0b46d4);
+            
+    
+            var marker_3d7e31ecd8f40dc7ddaad158d8ca98fe = L.marker(
+                [-22.9009472, -43.1812865],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_2d912e2ec7d51a21f409e30e90eec289 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a9edaff0800b2736fbbe27a1eb63a0a9 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_5204f3b0f4460ec2c7c2ee3e1298c8b5 = $(`<div id="html_5204f3b0f4460ec2c7c2ee3e1298c8b5" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 30322537-8<br> <b>Endereço:</b> Rua Téofilo Otoni, 143<br> <b>Rua:</b> Rua Teófilo Otoni<br> <b>Ponto de referência:</b> Próximo de obstáculo fixo<br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br>          <br>         <b>Foto:</b><br>          <img             src="images/30322537-8.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_a9edaff0800b2736fbbe27a1eb63a0a9.setContent(html_5204f3b0f4460ec2c7c2ee3e1298c8b5);
+            
+        
+
+        marker_3d7e31ecd8f40dc7ddaad158d8ca98fe.bindPopup(popup_a9edaff0800b2736fbbe27a1eb63a0a9)
+        ;
+
+        
+    
+    
+                marker_3d7e31ecd8f40dc7ddaad158d8ca98fe.setIcon(icon_2d912e2ec7d51a21f409e30e90eec289);
+            
+    
+            var marker_b5271a71ea20a67de629caccd46f9cae = L.marker(
+                [-22.9049635, -43.177753],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_f82b3f5ed4b71d8406883bfb297369ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6091ed18c665d5b2b091ac76bb60aff5 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_482958a1788eb586e9932433a1ee9ca4 = $(`<div id="html_482958a1788eb586e9932433a1ee9ca4" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 32503053-8<br> <b>Endereço:</b> Avenida Rio Branco, 88 <br> <b>Rua:</b> Avenida Rio Branco<br> <b>Ponto de referência:</b> Esquina com Rua Buenos Aires<br> <b>Tipo de ocorrência:</b> Reparo de buraco; deformação ou afundamento na pista<br>          <br>         <b>Foto:</b><br>          <img             src="images/32503053-8.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_6091ed18c665d5b2b091ac76bb60aff5.setContent(html_482958a1788eb586e9932433a1ee9ca4);
+            
+        
+
+        marker_b5271a71ea20a67de629caccd46f9cae.bindPopup(popup_6091ed18c665d5b2b091ac76bb60aff5)
+        ;
+
+        
+    
+    
+                marker_b5271a71ea20a67de629caccd46f9cae.setIcon(icon_f82b3f5ed4b71d8406883bfb297369ed);
+            
+    
+            var marker_1d4bd728b997b2b1ea033610fce891d6 = L.marker(
+                [-22.9044637, -43.1873504],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_f59072a1214fe86c06ad8f4ed9e3fce2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_afec066223bb0b653143605502d5c456 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_871c0f3fa0c27d2deebe044d95e6220a = $(`<div id="html_871c0f3fa0c27d2deebe044d95e6220a" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 32727996-2<br> <b>Endereço:</b> Avenida Presidente Vargas, 1261<br> <b>Rua:</b> Avenida Presidente Vargas<br> <b>Ponto de referência:</b> Esquina com a Praça da República, abaixo do Letreiro Biblioteca Parque Estadual<br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br>          <br>         <b>Foto:</b><br>          <img             src="images/32727996-2.jpeg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_afec066223bb0b653143605502d5c456.setContent(html_871c0f3fa0c27d2deebe044d95e6220a);
+            
+        
+
+        marker_1d4bd728b997b2b1ea033610fce891d6.bindPopup(popup_afec066223bb0b653143605502d5c456)
+        ;
+
+        
+    
+    
+                marker_1d4bd728b997b2b1ea033610fce891d6.setIcon(icon_f59072a1214fe86c06ad8f4ed9e3fce2);
+            
+    
+            var marker_25b6677bbfc9ff0bf3f6857feb945676 = L.marker(
+                [-22.9051364, -43.1846955],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_f0bcbbb0f99a631e51e4c1d4c30bd01c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2657a3fbb38cc8d24c51b7253de455b2 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_65558d8fb9442557b5140c3f2df6f0ab = $(`<div id="html_65558d8fb9442557b5140c3f2df6f0ab" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 32773543-0<br> <b>Endereço:</b> Rua Buenos Aires, 70<br> <b>Rua:</b> Rua Buenos Aires<br> <b>Ponto de referência:</b> 32773543-0<br> <b>Tipo de ocorrência:</b> Reposição de grelha/tampão<br>          <br>         <b>Foto:</b><br>          <img             src="images/32773543-0.jpeg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_2657a3fbb38cc8d24c51b7253de455b2.setContent(html_65558d8fb9442557b5140c3f2df6f0ab);
+            
+        
+
+        marker_25b6677bbfc9ff0bf3f6857feb945676.bindPopup(popup_2657a3fbb38cc8d24c51b7253de455b2)
+        ;
+
+        
+    
+    
+                marker_25b6677bbfc9ff0bf3f6857feb945676.setIcon(icon_f0bcbbb0f99a631e51e4c1d4c30bd01c);
+            
+    
+            var marker_1cb43aa5f7b6c77526a966dceb6033e7 = L.marker(
+                [-22.9071784, -43.1769397],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_597e85a2d19fd6300dda65e42eee9cf5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_06996778a4a727a924082f7d38f08af7 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_e3eca152ad06ddc19bec5e8201dfc89e = $(`<div id="html_e3eca152ad06ddc19bec5e8201dfc89e" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 32773603-5<br> <b>Endereço:</b> Avenida Rio Branco, 92<br> <b>Rua:</b> Avenida Rio Branco<br> <b>Ponto de referência:</b> Esquina com Rua do Rosário<br> <b>Tipo de ocorrência:</b> Reposição de grelha/tampão<br>          <br>         <b>Foto:</b><br>          <img             src="images/32773603-5.jpeg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_06996778a4a727a924082f7d38f08af7.setContent(html_e3eca152ad06ddc19bec5e8201dfc89e);
+            
+        
+
+        marker_1cb43aa5f7b6c77526a966dceb6033e7.bindPopup(popup_06996778a4a727a924082f7d38f08af7)
+        ;
+
+        
+    
+    
+                marker_1cb43aa5f7b6c77526a966dceb6033e7.setIcon(icon_597e85a2d19fd6300dda65e42eee9cf5);
+            
+    
+            var marker_e1340b1c57da1bcd62bb578da1a92dca = L.marker(
+                [-22.9046489, -43.1903108],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_ca742aadbd25f30f6e4b3b56372e0fc9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36b962e16ab55288098950617a341dbd = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_3568193e80061a3151a068dfaea5a7e5 = $(`<div id="html_3568193e80061a3151a068dfaea5a7e5" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 32229379-0<br> <b>Endereço:</b> Avenida Presidente Vargas, 914<br> <b>Rua:</b> Avenida Presidente Vargas<br> <b>Ponto de referência:</b> Depois da esquina com Avenida Passos<br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br>          <br>         <b>Foto:</b><br>          <img             src="images/32229379-0.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_36b962e16ab55288098950617a341dbd.setContent(html_3568193e80061a3151a068dfaea5a7e5);
+            
+        
+
+        marker_e1340b1c57da1bcd62bb578da1a92dca.bindPopup(popup_36b962e16ab55288098950617a341dbd)
+        ;
+
+        
+    
+    
+                marker_e1340b1c57da1bcd62bb578da1a92dca.setIcon(icon_ca742aadbd25f30f6e4b3b56372e0fc9);
+            
+    
+            var marker_44054847e0c9ac8fcede0e9eba634714 = L.marker(
+                [-22.9007226, -43.1816597],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_b3ef45d971812aace61ba92179e2e694 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec3e72b86ad0f611be47c3bebff6dfc7 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_f6270597232b45ac30a9a68f09a3db9d = $(`<div id="html_f6270597232b45ac30a9a68f09a3db9d" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 32080655-2<br> <b>Endereço:</b> Avenida Marechal Floriano, 151<br> <b>Rua:</b> Avenida Marechal Floriano<br> <b>Ponto de referência:</b> Lanchonete<br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br>          <br>         <b>Foto:</b><br>          <img             src="images/32080655-2.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_ec3e72b86ad0f611be47c3bebff6dfc7.setContent(html_f6270597232b45ac30a9a68f09a3db9d);
+            
+        
+
+        marker_44054847e0c9ac8fcede0e9eba634714.bindPopup(popup_ec3e72b86ad0f611be47c3bebff6dfc7)
+        ;
+
+        
+    
+    
+                marker_44054847e0c9ac8fcede0e9eba634714.setIcon(icon_b3ef45d971812aace61ba92179e2e694);
+            
+    
+            var marker_0561d16ed6d81eae3f9cf59bcb675704 = L.marker(
+                [-22.9, -43.18],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_67b6d29ef85d62ca860e504d8eda97a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab5722b87b6ca6770dcce63b4e4758f4 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_1929fc06e7820c8e4b59e7b480c1ae74 = $(`<div id="html_1929fc06e7820c8e4b59e7b480c1ae74" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 32472380-5<br> <b>Endereço:</b> Rua Teófilo Otoni, 86<br> <b>Rua:</b> nan<br> <b>Ponto de referência:</b> Próximo do meio-fio<br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br>          <br>         <b>Foto:</b><br>          <img             src="images/32472380-5.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_ab5722b87b6ca6770dcce63b4e4758f4.setContent(html_1929fc06e7820c8e4b59e7b480c1ae74);
+            
+        
+
+        marker_0561d16ed6d81eae3f9cf59bcb675704.bindPopup(popup_ab5722b87b6ca6770dcce63b4e4758f4)
+        ;
+
+        
+    
+    
+                marker_0561d16ed6d81eae3f9cf59bcb675704.setIcon(icon_67b6d29ef85d62ca860e504d8eda97a1);
+            
+    
+            var marker_0dd360949cd71789ab09e8979c6edb35 = L.marker(
+                [-22.902578, -43.1761904],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_117539f134dccc3dbde4def0d03c3a16 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2536dcd8d414ec31e1ee2a2c0b46b604 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_dc8b6487b16156bb2db595111caa124b = $(`<div id="html_dc8b6487b16156bb2db595111caa124b" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 32693263-6<br> <b>Endereço:</b> Rua do Ouvidor, 160<br> <b>Rua:</b> Rua do Ouvidor<br> <b>Ponto de referência:</b> C&A<br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br>          <br>         <b>Foto:</b><br>          <img             src="images/32693263-6.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_2536dcd8d414ec31e1ee2a2c0b46b604.setContent(html_dc8b6487b16156bb2db595111caa124b);
+            
+        
+
+        marker_0dd360949cd71789ab09e8979c6edb35.bindPopup(popup_2536dcd8d414ec31e1ee2a2c0b46b604)
+        ;
+
+        
+    
+    
+                marker_0dd360949cd71789ab09e8979c6edb35.setIcon(icon_117539f134dccc3dbde4def0d03c3a16);
+            
+    
+            var marker_76e551245294627a4b0203c573983b6a = L.marker(
+                [-22.9056536, -43.1776897],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_9a4263afa13da972afdc4230e3be2e62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d94e13d5e1efc2567284f40212ed709 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_654eec57b3737ebbaec37f311e461e1d = $(`<div id="html_654eec57b3737ebbaec37f311e461e1d" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 32728054-5<br> <b>Endereço:</b> Avenida Rio Branco, 138<br> <b>Rua:</b> Avenida Rio Branco<br> <b>Ponto de referência:</b> Em frente à Caixa Econômica<br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br>          <br>         <b>Foto:</b><br>          <img             src="images/32728054-5.jpeg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_3d94e13d5e1efc2567284f40212ed709.setContent(html_654eec57b3737ebbaec37f311e461e1d);
+            
+        
+
+        marker_76e551245294627a4b0203c573983b6a.bindPopup(popup_3d94e13d5e1efc2567284f40212ed709)
+        ;
+
+        
+    
+    
+                marker_76e551245294627a4b0203c573983b6a.setIcon(icon_9a4263afa13da972afdc4230e3be2e62);
+            
+    
+            var marker_20773f45a5a9701a31cb4f871a9dfc15 = L.marker(
+                [-22.9025168, -43.1813792],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_46581dcb0b06321609b0a9abb3a0b86c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_632adcbb26a51641dc5efaea002ba868 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_23f76a957f6450e0a6843602fc971695 = $(`<div id="html_23f76a957f6450e0a6843602fc971695" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 28796918-4<br> <b>Endereço:</b> Avenida Presidente Vargas, 633 <br> <b>Rua:</b> Avenida Presidente Vargas<br> <b>Ponto de referência:</b> na direção do Edifício Kennedy pista do meio sentido Central na altura da faixa de pedestres <br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br>          <br>         <b>Foto:</b><br>          <img             src="images/28796918-4.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_632adcbb26a51641dc5efaea002ba868.setContent(html_23f76a957f6450e0a6843602fc971695);
+            
+        
+
+        marker_20773f45a5a9701a31cb4f871a9dfc15.bindPopup(popup_632adcbb26a51641dc5efaea002ba868)
+        ;
+
+        
+    
+    
+                marker_20773f45a5a9701a31cb4f871a9dfc15.setIcon(icon_46581dcb0b06321609b0a9abb3a0b86c);
+            
+    
+            var marker_4b85a0222c1c871f50824b2bc535417f = L.marker(
+                [-22.8632474, -43.7757684],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_60127a19b711dff99a662be9a34856ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_32434582249605311323bd4b185265ff = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_b859a32bf4d454fa56ee67264c266186 = $(`<div id="html_b859a32bf4d454fa56ee67264c266186" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 32038639-0<br> <b>Endereço:</b> Rua Didimo, 90<br> <b>Rua:</b> Rua Didimo<br> <b>Ponto de referência:</b> Junto do estabelecimento<br> <b>Tipo de ocorrência:</b> Reposição de grelha/tampão<br>          <br>         <b>Foto:</b><br>          <img             src="images/32038639-0.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_32434582249605311323bd4b185265ff.setContent(html_b859a32bf4d454fa56ee67264c266186);
+            
+        
+
+        marker_4b85a0222c1c871f50824b2bc535417f.bindPopup(popup_32434582249605311323bd4b185265ff)
+        ;
+
+        
+    
+    
+                marker_4b85a0222c1c871f50824b2bc535417f.setIcon(icon_60127a19b711dff99a662be9a34856ef);
+            
+    
+            var marker_aa31417270bca1493ee6e8f175b860e5 = L.marker(
+                [-22.9, -43.18],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_2518185e14c4678e482cec85bd26d7d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd0b9d6d86d53e93864a87d91a075418 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_b254e981ddc841bacb42560120da6478 = $(`<div id="html_b254e981ddc841bacb42560120da6478" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 32394808-0<br> <b>Endereço:</b> Praça Cruz Vermelha, 34<br> <b>Rua:</b> nan<br> <b>Ponto de referência:</b> 34<br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br>          <br>         <b>Foto:</b><br>          <img             src="images/32394808-0.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_dd0b9d6d86d53e93864a87d91a075418.setContent(html_b254e981ddc841bacb42560120da6478);
+            
+        
+
+        marker_aa31417270bca1493ee6e8f175b860e5.bindPopup(popup_dd0b9d6d86d53e93864a87d91a075418)
+        ;
+
+        
+    
+    
+                marker_aa31417270bca1493ee6e8f175b860e5.setIcon(icon_2518185e14c4678e482cec85bd26d7d5);
+            
+    
+            var marker_27ac4819634aa2b940a99c6196489a97 = L.marker(
+                [-22.9110528, -43.1926371],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_92a3331ffe2615c9066b193e2dce377d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75b6d4f1f9f36e64c1c83831c8c6f41d = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_82a7d31736dadd2526a529850beb825b = $(`<div id="html_82a7d31736dadd2526a529850beb825b" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 31016181-2<br> <b>Endereço:</b> Avenida Mem de Sá, 330<br> <b>Rua:</b> Avenida Mem de Sá<br> <b>Ponto de referência:</b> 330<br> <b>Tipo de ocorrência:</b> Reposição de grelha/tampão<br>          <br>         <b>Foto:</b><br>          <img             src="images/31016181-2.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_75b6d4f1f9f36e64c1c83831c8c6f41d.setContent(html_82a7d31736dadd2526a529850beb825b);
+            
+        
+
+        marker_27ac4819634aa2b940a99c6196489a97.bindPopup(popup_75b6d4f1f9f36e64c1c83831c8c6f41d)
+        ;
+
+        
+    
+    
+                marker_27ac4819634aa2b940a99c6196489a97.setIcon(icon_92a3331ffe2615c9066b193e2dce377d);
+            
+    
+            var marker_1e491b1274412af9a34d3cd3ada140fc = L.marker(
+                [-22.9, -43.18],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_8b4ac3ce93b83d290cf7a079344e9268 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_caaa689041281a7fdb4a0b2338436751 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_93409baa86dc17334ad0c63f5de7e78c = $(`<div id="html_93409baa86dc17334ad0c63f5de7e78c" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 32392637-5<br> <b>Endereço:</b> Rua Gonçalves Dias, 43<br> <b>Rua:</b> nan<br> <b>Ponto de referência:</b> Casa Velha<br> <b>Tipo de ocorrência:</b> Reparo de buraco; deformação ou afundamento na pista<br>          <br>         <b>Foto:</b><br>          <img             src="images/32392637-5.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_caaa689041281a7fdb4a0b2338436751.setContent(html_93409baa86dc17334ad0c63f5de7e78c);
+            
+        
+
+        marker_1e491b1274412af9a34d3cd3ada140fc.bindPopup(popup_caaa689041281a7fdb4a0b2338436751)
+        ;
+
+        
+    
+    
+                marker_1e491b1274412af9a34d3cd3ada140fc.setIcon(icon_8b4ac3ce93b83d290cf7a079344e9268);
+            
+    
+            var marker_fa0ae46620349703219c73232740f7a2 = L.marker(
+                [-22.9058916, -43.1798601],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_0e10f1d4145effe98da0d166c9838403 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_59d3f4da3d11765d439966c0cb91416f = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_a6449f1b562d08e8b888c2fe877db627 = $(`<div id="html_a6449f1b562d08e8b888c2fe877db627" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 32038489-5<br> <b>Endereço:</b> Rua Sete de Setembro, 129<br> <b>Rua:</b> Rua Sete de Setembro<br> <b>Ponto de referência:</b> Esquina com Rua Uruguaiana, 26<br> <b>Tipo de ocorrência:</b> Reparo de buraco; deformação ou afundamento na pista<br>          <br>         <b>Foto:</b><br>          <img             src="images/32038489-5.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_59d3f4da3d11765d439966c0cb91416f.setContent(html_a6449f1b562d08e8b888c2fe877db627);
+            
+        
+
+        marker_fa0ae46620349703219c73232740f7a2.bindPopup(popup_59d3f4da3d11765d439966c0cb91416f)
+        ;
+
+        
+    
+    
+                marker_fa0ae46620349703219c73232740f7a2.setIcon(icon_0e10f1d4145effe98da0d166c9838403);
+            
+    
+            var marker_6e587ac1f90299206be4a3c959159592 = L.marker(
+                [-22.9058916, -43.1798601],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_c89d9dd53dee2cff3f40ac5725fd85d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75bb3f9858be707bdba1da873e5c196f = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_12749b66fd027ccd3986d0f17eee61e9 = $(`<div id="html_12749b66fd027ccd3986d0f17eee61e9" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 31547452-2<br> <b>Endereço:</b> Rua Sete de Setembro, 129 <br> <b>Rua:</b> Rua Sete de Setembro<br> <b>Ponto de referência:</b> Esquina com Rua Uruguaiana<br> <b>Tipo de ocorrência:</b> Reparo de buraco; deformação ou afundamento na pista<br>          <br>         <b>Foto:</b><br>          <img             src="images/31547452-2.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_75bb3f9858be707bdba1da873e5c196f.setContent(html_12749b66fd027ccd3986d0f17eee61e9);
+            
+        
+
+        marker_6e587ac1f90299206be4a3c959159592.bindPopup(popup_75bb3f9858be707bdba1da873e5c196f)
+        ;
+
+        
+    
+    
+                marker_6e587ac1f90299206be4a3c959159592.setIcon(icon_c89d9dd53dee2cff3f40ac5725fd85d4);
+            
+    
+            var marker_087721811a0d795eecd584b78dee08a0 = L.marker(
+                [-22.9054789, -43.1777753],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_5fef0231be0609454f0eeff7389c9a8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ab0b7813a1357878eb0bea9ea71cc4f = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_8dfde4b710a591cc2c815c048f6933d3 = $(`<div id="html_8dfde4b710a591cc2c815c048f6933d3" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 31050927-8<br> <b>Endereço:</b> Avenida Rio Branco, 134<br> <b>Rua:</b> Avenida Rio Branco<br> <b>Ponto de referência:</b> Caixa<br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br>          <br>         <b>Foto:</b><br>          <img             src="images/31050927-8.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_2ab0b7813a1357878eb0bea9ea71cc4f.setContent(html_8dfde4b710a591cc2c815c048f6933d3);
+            
+        
+
+        marker_087721811a0d795eecd584b78dee08a0.bindPopup(popup_2ab0b7813a1357878eb0bea9ea71cc4f)
+        ;
+
+        
+    
+    
+                marker_087721811a0d795eecd584b78dee08a0.setIcon(icon_5fef0231be0609454f0eeff7389c9a8d);
+            
+    
+            var marker_a43275a1423d58552c8a11901a755537 = L.marker(
+                [-22.9078988, -43.1768588],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_135d794762552cdcf012fb794b59f71f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75e13ef4145834eaf8593104310136c0 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_a450a79f169841a14f0f03a15fc36cad = $(`<div id="html_a450a79f169841a14f0f03a15fc36cad" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 32080473-4<br> <b>Endereço:</b> Avenida Almirante Barroso, 25<br> <b>Rua:</b> Avenida Almirante Barroso<br> <b>Ponto de referência:</b>  Esquina com Avenida Rio Branco <br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br>          <br>         <b>Foto:</b><br>          <img             src="images/32080473-4.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_75e13ef4145834eaf8593104310136c0.setContent(html_a450a79f169841a14f0f03a15fc36cad);
+            
+        
+
+        marker_a43275a1423d58552c8a11901a755537.bindPopup(popup_75e13ef4145834eaf8593104310136c0)
+        ;
+
+        
+    
+    
+                marker_a43275a1423d58552c8a11901a755537.setIcon(icon_135d794762552cdcf012fb794b59f71f);
+            
+    
+            var marker_97243e0cbd3a51b8ad284a7b93acd3e4 = L.marker(
+                [-22.9050756, -43.178086],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_7005dced38d25fa2967f7fa433eacc64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38a356fbd95ae8925c970eb2c51d9919 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_c20f4ef5cbf9bc639ceb0039df53c6ac = $(`<div id="html_c20f4ef5cbf9bc639ceb0039df53c6ac" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 31608101-2<br> <b>Endereço:</b> Rua Sete de Setembro, 88 <br> <b>Rua:</b> Rua Sete de Setembro<br> <b>Ponto de referência:</b> Entre Chuá e Mia Mar Make<br> <b>Tipo de ocorrência:</b> Fiscalização de buraco na calçada<br>          <br>         <b>Foto:</b><br>          <img             src="images/31608101-2.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_38a356fbd95ae8925c970eb2c51d9919.setContent(html_c20f4ef5cbf9bc639ceb0039df53c6ac);
+            
+        
+
+        marker_97243e0cbd3a51b8ad284a7b93acd3e4.bindPopup(popup_38a356fbd95ae8925c970eb2c51d9919)
+        ;
+
+        
+    
+    
+                marker_97243e0cbd3a51b8ad284a7b93acd3e4.setIcon(icon_7005dced38d25fa2967f7fa433eacc64);
+            
+    
+            var marker_24ba71a669786fd07e96af0dc473b2d7 = L.marker(
+                [-22.9043693, -43.1781877],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_600c625653aee25b444a4c8272aaaad4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec23d0de5b8e1d4dbd18cca31d9ab931 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_002ed018cccca691a9220321d00eec6f = $(`<div id="html_002ed018cccca691a9220321d00eec6f" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 32115607-0<br> <b>Endereço:</b> Avenida Rio Branco, 114 <br> <b>Rua:</b> Avenida Rio Branco<br> <b>Ponto de referência:</b> Edifício Pernambuco <br> <b>Tipo de ocorrência:</b> Reparo de buraco; deformação ou afundamento na pista<br>          <br>         <b>Foto:</b><br>          <img             src="images/32115607-0.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_ec23d0de5b8e1d4dbd18cca31d9ab931.setContent(html_002ed018cccca691a9220321d00eec6f);
+            
+        
+
+        marker_24ba71a669786fd07e96af0dc473b2d7.bindPopup(popup_ec23d0de5b8e1d4dbd18cca31d9ab931)
+        ;
+
+        
+    
+    
+                marker_24ba71a669786fd07e96af0dc473b2d7.setIcon(icon_600c625653aee25b444a4c8272aaaad4);
+            
+    
+            var marker_a119804c857ff2974e127ca032d6417a = L.marker(
+                [-22.9111518, -43.1855906],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_e7b9f38abb1937ff9443457160481c56 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dfac7f309353c551c5e0652917f9e6ab = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_ec24dfb89b2d42bf55f3b2cd8b78a59b = $(`<div id="html_ec24dfb89b2d42bf55f3b2cd8b78a59b" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 32229371-6<br> <b>Endereço:</b> Avenida Henrique Valadares, 17<br> <b>Rua:</b> Avenida Henrique Valadares<br> <b>Ponto de referência:</b> Fresh Comida Saudável<br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br>          <br>         <b>Foto:</b><br>          <img             src="images/32229371-6.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_dfac7f309353c551c5e0652917f9e6ab.setContent(html_ec24dfb89b2d42bf55f3b2cd8b78a59b);
+            
+        
+
+        marker_a119804c857ff2974e127ca032d6417a.bindPopup(popup_dfac7f309353c551c5e0652917f9e6ab)
+        ;
+
+        
+    
+    
+                marker_a119804c857ff2974e127ca032d6417a.setIcon(icon_e7b9f38abb1937ff9443457160481c56);
+            
+    
+            var marker_39fbdcc6457ae321ed9253e4c8f0cdb2 = L.marker(
+                [-22.9049635, -43.177753],
+                {
+}
+            ).addTo(marker_cluster_ef1a07d28ab881dc47f651a9aea03813);
+        
+    
+            var icon_833dc674729acab4463b5802cf5f980e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_283346cc80b919d07b16df7f8d7bc25d = L.popup({
+  "maxWidth": 350,
+  "minWidth": 300,
+});
+
+        
+            
+                var html_163156202b25494a49a13faf62e96328 = $(`<div id="html_163156202b25494a49a13faf62e96328" style="width: 100.0%; height: 100.0%;"> <b>Protocolo:</b> 31779604-5<br> <b>Endereço:</b> Avenida Rio Branco, 88<br> <b>Rua:</b> Avenida Rio Branco<br> <b>Ponto de referência:</b> Junto do estabelecimento <br> <b>Tipo de ocorrência:</b> Reparo de buraco em calçada de pedra portuguesa<br>          <br>         <b>Foto:</b><br>          <img             src="images/31779604-5.jpg"             width="250px"             style="margin-top:10px;"         >         </div></div>`)[0];
+                popup_283346cc80b919d07b16df7f8d7bc25d.setContent(html_163156202b25494a49a13faf62e96328);
+            
+        
+
+        marker_39fbdcc6457ae321ed9253e4c8f0cdb2.bindPopup(popup_283346cc80b919d07b16df7f8d7bc25d)
+        ;
+
+        
+    
+    
+                marker_39fbdcc6457ae321ed9253e4c8f0cdb2.setIcon(icon_833dc674729acab4463b5802cf5f980e);
+            
+    
+            marker_cluster_ef1a07d28ab881dc47f651a9aea03813.addTo(feature_group_7249f994115f7023c7d18192fa4c06bf);
+        
+    
+            feature_group_7249f994115f7023c7d18192fa4c06bf.addTo(map_1acfea5ec3c294fdbab3c4d0f5511456);
+        
+    
+            var layer_control_075c70dcaa04167fdf445e0c1d12fa09_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_92e596e8b276b3655c60c16d59a12c73,
+                },
+                overlays :  {
+                    "Ocorr\u00eancias Solucionadas" : feature_group_7249f994115f7023c7d18192fa4c06bf,
+                },
+            };
+            let layer_control_075c70dcaa04167fdf445e0c1d12fa09 = L.control.layers(
+                layer_control_075c70dcaa04167fdf445e0c1d12fa09_layers.base_layers,
+                layer_control_075c70dcaa04167fdf445e0c1d12fa09_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_1acfea5ec3c294fdbab3c4d0f5511456);
+
+        
+</script>
+</html>
